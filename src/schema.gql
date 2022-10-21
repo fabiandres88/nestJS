@@ -3,5 +3,5 @@
 # ------------------------------------------------------
 
 type Query {
-  getHelloWorld: String!
+  message: String!
 }

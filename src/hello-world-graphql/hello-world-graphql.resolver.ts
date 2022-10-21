@@ -2,7 +2,7 @@ import { Query, Resolver } from '@nestjs/graphql';
 
 @Resolver()
 export class HelloWorldGraphqlResolver {
-    @Query(() => String)
+    @Query(() => String, {name: "message"})
     getHelloWorld(): string {
         return "Hello world graph-ql";
     }
