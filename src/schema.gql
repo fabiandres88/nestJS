@@ -4,5 +4,7 @@
 
 type Query {
   message: String!
-  randomDice: Float!
+
+  """this field has the dice value"""
+  randomDice(max: Int): Int!
 }
