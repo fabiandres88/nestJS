@@ -10,7 +10,7 @@ import { HelloWorldGraphqlModule } from './hello-world-graphql/hello-world-graph
     HelloWorldRestModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      playground: true,
+      // playground: true,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
     }),
     HelloWorldGraphqlModule,
