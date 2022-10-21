@@ -1,4 +1,14 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
 @Controller('hello-world-rest')
-export class HelloWorldRestController {}
+export class HelloWorldRestController {
+    @Get()
+    getHelloWorld(): string {
+        return "Hello world rest";
+    }
+
+    @Get("dice")
+    getRandomNumber(): number {
+        return 10;
+    }
+}
