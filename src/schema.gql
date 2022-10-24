@@ -3,5 +3,8 @@
 # ------------------------------------------------------
 
 type Query {
-  getHelloWorld: String!
+  message: String!
+
+  """this field has the dice value"""
+  randomDice(max: Int): Int!
 }
